@@ -1,18 +1,21 @@
 body {
   background-color: white;
     font-size: 25px;
+/* Makes the green and white gradient*/
  background-image: radial-gradient( white 40%, lightgreen 60%);
 }
+/* Makes the colors in content go from one color to the other*/
 @keyframes content{
     from{color: green}
     to{color: black}
 }
+
 h1 {
  font-family: 'Permanent Marker', cursive;
     text-align: center;
     position: relative;
-
 }
+
 @keyframes span{
     from{color: red}
     to{color: green}
@@ -23,12 +26,13 @@ h1 {
     text-align: center;
     font-size: 33px;
  color: green;
+ /* Makes the animation be 15 and makes it run infinitely*/
  animation: content;
 animation-duration: 15s;
 animation-iteration-count: infinite;
    
 }
-
+/* when hovered over, makes images turn*/
 :hover #alien  {
   transform: rotate(360deg);
 }
@@ -40,6 +44,7 @@ animation-iteration-count: infinite;
     width: 108px;
     top: 0px;
     left: 0;
+   /* Makes shadow around image and makes image turn in 5 seconds*/
     box-shadow: 10px 1px;
   margin-left: 30px;
   transition: transform 5s;
@@ -69,6 +74,7 @@ animation-iteration-count: infinite;
     width: 200px;
     float: right;
     margin-top: 50px;
+    /* Makes image stand out with border*/
     border:5px solid darkblue;
 }
 
@@ -80,10 +86,10 @@ animation-iteration-count: infinite;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
 }
-
 span {
     color: red;
     font-size: 33px;
+/* Makes the animation be 15 and makes it run infinitely*/
    animation: span;
     animation-duration:15s;
     animation-iteration-count: infinite;
